@@ -1,23 +1,13 @@
-@mobile (max-width:500px) {
-  nav {
-    display: flex;
-    flex-direction: column;
-  }
-}
 .test {
   border: 1px solid red;
 }
 .button {
   display: flex;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 10 px;
   padding: 10px;
   background: #17A2B8;
   font-size: 2rem;
-  color: white;
-}
-.hover {
-  background: #17A2B8;
   color: white;
 }
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -199,6 +189,14 @@ nav {
   justify-content: space-between;
   margin-top: 20px;
 }
+@media (max-width: 500px) {
+  nav {
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid red;
+    font-size: 50px;
+  }
+}
 nav .aTag {
   align-items: center;
   width: 40%;
@@ -273,7 +271,7 @@ hr {
 .home .content-pick .destination .btn {
   display: flex;
   justify-content: center;
-  border-radius: 10px;
+  border-radius: 10 px;
   padding: 10px;
   background: #17A2B8;
   font-size: 2rem;
