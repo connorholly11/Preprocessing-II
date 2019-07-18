@@ -3,3 +3,20 @@
 .test{
     border: 1px solid red;
 }
+
+.button()
+
+.button(@display:flex, @justify:center, @border:10px, @padding:10px, @background:@button-bg, @font-size:2rem, color:white){
+    display:@display;
+    justify-content: @justify;
+    border-radius:@border;
+    padding:@padding;
+    background:@background;
+    font-size:@font-size;
+    color:@color;
+}
+
+.hover{
+    background:@button-bg;
+    color:white;
+}
