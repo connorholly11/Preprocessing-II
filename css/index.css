@@ -197,6 +197,10 @@ nav .aTag a {
   color: #212529;
   font-size: 1.5rem;
 }
+nav .aTag a:hover {
+  background: blue;
+  color: white;
+}
 @media (max-width:500px) {
   nav {
     display: flex;
