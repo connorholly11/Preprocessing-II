@@ -1,15 +1,6 @@
 .test {
   border: 1px solid red;
 }
-.button {
-  display: flex;
-  justify-content: center;
-  border-radius: 10 px;
-  padding: 10px;
-  background: #17A2B8;
-  font-size: 2rem;
-  color: white;
-}
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -189,14 +180,6 @@ nav {
   justify-content: space-between;
   margin-top: 20px;
 }
-@media (max-width: 500px) {
-  nav {
-    flex-direction: column;
-    justify-content: center;
-    border: 1px solid red;
-    font-size: 50px;
-  }
-}
 nav .aTag {
   align-items: center;
   width: 40%;
@@ -207,6 +190,23 @@ nav .aTag a {
   text-decoration: none;
   color: #212529;
   font-size: 1.5rem;
+}
+@media (max-width:500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border: 1px solid red;
+    font-size: 50px;
+  }
+  nav .aTag {
+    justify-content: space-between;
+  }
+}
+@media (max-width:500px) and (max-width:500px) {
+  nav .aTag {
+    justify-content: space-between;
+  }
 }
 hr {
   border: 2px dashed #C0C0C0;
@@ -227,6 +227,14 @@ hr {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+}
+@media (max-width:500px) {
+  .home .content-section {
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
 }
 .home .content-section .text-content {
   width: 48%;
@@ -264,14 +272,26 @@ hr {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width:500px) {
+  .home .content-pick {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+}
 .home .content-pick .destination {
   width: 30%;
   margin-bottom: 30px;
 }
+@media (max-width:500px) {
+  .home .content-pick .destination {
+    width: 75%;
+  }
+}
 .home .content-pick .destination .btn {
   display: flex;
   justify-content: center;
-  border-radius: 10 px;
+  border-radius: 10px;
   padding: 10px;
   background: #17A2B8;
   font-size: 2rem;

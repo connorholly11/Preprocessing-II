@@ -9,12 +9,7 @@ nav{
     justify-content:space-between;
     margin-top:20px;
     
-    @media (max-width:500px) {
-        flex-direction:column;
-        justify-content:center;
-        .test();
-        font-size:50px; 
-    }
+    
 
     .aTag{
         align-items: center;
@@ -28,11 +23,28 @@ nav{
         }//closes a
     }//closes aTag
     
+    @media @mobile {
+        display:flex;
+        flex-direction:column;
+        justify-content:center;
+        .test();
+        font-size:50px;
+        
+        
+        .aTag{
+            justify-content:space-between;
+            @media @mobile{
+                justify-content:space-between;
+              }
+        }
+    }//query ends
 }//closes nav
 
 hr{
     border: 2px dashed @navigation-border;
 }//closes hr
+
+
 
 
 
