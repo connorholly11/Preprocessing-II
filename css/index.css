@@ -186,6 +186,12 @@ nav .aTag {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width:500px) {
+  nav .aTag {
+    justify-content: space-between;
+    width: 100%;
+  }
+}
 nav .aTag a {
   text-decoration: none;
   color: #212529;
@@ -196,16 +202,7 @@ nav .aTag a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    border: 1px solid red;
     font-size: 50px;
-  }
-  nav .aTag {
-    justify-content: space-between;
-  }
-}
-@media (max-width:500px) and (max-width:500px) {
-  nav .aTag {
-    justify-content: space-between;
   }
 }
 hr {
@@ -230,7 +227,6 @@ hr {
 }
 @media (max-width:500px) {
   .home .content-section {
-    flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
     width: 100%;
@@ -240,9 +236,19 @@ hr {
   width: 48%;
   padding-right: 1%;
 }
+@media (max-width:500px) {
+  .home .content-section .text-content {
+    width: 75%;
+  }
+}
 .home .content-section .img-content {
   width: 48%;
   padding-left: 1%;
+}
+@media (max-width:500px) {
+  .home .content-section .img-content {
+    width: 75%;
+  }
 }
 .home .content-section .img-content img {
   border-radius: 10px;
@@ -258,6 +264,12 @@ hr {
 .home .inverse-content .img-content {
   padding-right: 1%;
   padding-left: 0;
+}
+@media (max-width:500px) {
+  .home .inverse-content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
 }
 .home .content-destination {
   width: 75%;
@@ -285,7 +297,7 @@ hr {
 }
 @media (max-width:500px) {
   .home .content-pick .destination {
-    width: 75%;
+    width: 50%;
   }
 }
 .home .content-pick .destination .btn {
