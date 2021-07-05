@@ -1,1 +1,31 @@
 // Mixins in here
+
+.test{
+    border: 1px solid red;
+}
+
+// .button(@display:flex, @justify:center, @border:10px, @padding:10px, @background:@button-bg, @font-size:2rem, color:white){
+//     display:@display;
+//     justify-content: @justify;
+//     border-radius:@border;
+//     padding:@padding;
+//     background:@background;
+//     font-size:@font-size;
+//     color:@color;
+// }
+
+.button(@color:white, @font-size:2rem){
+    display:flex;
+    justify-content: center;
+    border-radius:10px;
+    padding: 10px;
+    background:@button-bg;
+    font-size:@font-size;
+    color:@color;
+}
+
+.hover(@background-color:red, @color:black){
+    background:@background-color;
+    color:@color
+}
+
